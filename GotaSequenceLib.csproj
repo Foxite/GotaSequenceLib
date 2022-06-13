@@ -1,4 +1,26 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Sanford.Multimedia.Midi" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GotaSoundIO\GotaSoundIO.csproj">
+      <Project>{F0BCD085-9DC4-4B22-B791-C725CA8E46F6}</Project>
+      <Name>GotaSoundIO</Name>
+    </ProjectReference>
+  </ItemGroup>
+
+</Project>
+
+
+<!--
+        <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -31,9 +53,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NAudio, Version=1.10.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>NAudio.1.10.0\lib\net35\NAudio.dll</HintPath>
-    </Reference>
     <Reference Include="Sanford.Multimedia.Midi, Version=6.6.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\Nitro Studio 2\packages\Sanford.Multimedia.Midi.6.6.2\lib\net20\Sanford.Multimedia.Midi.dll</HintPath>
     </Reference>
@@ -89,3 +108,4 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
+-->
